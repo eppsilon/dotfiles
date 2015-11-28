@@ -2,6 +2,7 @@ To install:
 
 ```sh
 git clone ssh://git@github.com/eppsilon/dotfiles .dotfiles
+git submodule update --init --recursive
 ./.dotfiles/install.sh
 ```
 
