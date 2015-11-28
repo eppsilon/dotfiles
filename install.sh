@@ -1,6 +1,13 @@
 #!/usr/bin/env sh
-ln -sf $HOME/.dotfiles/.gitconfig .gitconfig
-ln -sf $HOME/.dotfiles/.zpreztorc .zpreztorc
-ln -sf $HOME/.dotfiles/.zprofile .zprofile
-ln -sf $HOME/.dotfiles/.zshenv .zshenv
-ln -sf $HOME/.dotfiles/.zshrc .zshrc
+
+DOTFILES=(".gitconfig"
+          ".mdastrc"
+          ".zpreztorc"
+          ".zprofile"
+          ".zshenv"
+          ".zshrc")
+
+for dotfile in "${DOTFILES[@]}"
+do
+  ln -sf $HOME/.dotfiles/$dotfile $HOME/$dotfile
+done
