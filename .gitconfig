@@ -1,0 +1,25 @@
+[core]
+	editor = nano -w
+
+[user]
+	name = Brett Epps
+
+[push]
+	default = simple
+
+[diff]
+	tool = bc3
+
+[difftool]
+	prompt = false
+	bc3 = trustExitCode
+
+[merge]
+	tool = bc3
+
+[mergetool]
+	prompt = false
+	bc3 = trustExitCode
+
+[include]
+	path = ~/.gitconfig.user
