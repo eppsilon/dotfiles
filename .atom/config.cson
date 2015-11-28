@@ -1,0 +1,62 @@
+"*":
+  "exception-reporting":
+    userId: "ff8ebc7d-7204-4993-ee88-c2ad35f562d5"
+  welcome:
+    showOnStartup: false
+  core:
+    projectHome: "/Users/brett/Repos"
+    disabledPackages: [
+      "archive-view"
+      "autocomplete-atom-api"
+      "image-view"
+      "language-clojure"
+      "language-csharp"
+      "language-go"
+      "language-java"
+      "language-less"
+      "language-make"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-property-list"
+      "language-ruby-on-rails"
+      "language-toml"
+      "metrics"
+      "open-on-github"
+      "package-generator"
+      "styleguide"
+      "welcome"
+    ]
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
+    ]
+  editor:
+    invisibles: {}
+    showInvisibles: true
+    showIndentGuide: true
+    preferredLineLength: 120
+    fontFamily: "input mono"
+    fontSize: 12
+    backUpBeforeSaving: true
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+  minimap:
+    plugins:
+      "find-and-replace": true
+      "git-diff": true
+      linter: true
+      selection: true
+  "tree-view":
+    hideIgnoredNames: true
+    showOnRightSide: true
+  "linter-scss-lint":
+    executablePath: "/usr/local/var/rbenv/versions/2.2.3/bin/scss-lint"
+  "linter-eslint":
+    useGlobalEslint: true
+    globalNodePath: "/usr/local"
