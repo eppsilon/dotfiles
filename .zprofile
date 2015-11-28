@@ -22,3 +22,5 @@ ulimit -n 8192
 
 # docker
 export DOCKER_MACHINE_DRIVER=vmwarefusion
+
+source $HOME/.zprofile.user
