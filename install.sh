@@ -1,7 +1,9 @@
 #!/usr/bin/env sh
 
-DOTFILES=(".atom/config.cson"
+DOTFILES=(".atom/.apmrc"
+          ".atom/config.cson"
           ".atom/keymap.cson"
+          ".atom/packages.txt"
           ".gitconfig"
           ".mdastrc"
           ".zpreztorc"
@@ -21,3 +23,5 @@ for dotfile in "${DOTFILES[@]}"
 do
   ln -sf $HOME/.dotfiles/$dotfile $HOME/$dotfile
 done
+
+apm install --packages-file=$HOME/.atom/packages.txt
