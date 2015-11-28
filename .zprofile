@@ -1,4 +1,4 @@
-source ./.zprofile.prezto
+source $HOME/.dotfiles/.zprofile.prezto
 
 # browser
 export BROWSER='open'
