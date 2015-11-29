@@ -11,18 +11,19 @@ DOTFILES=(".atom/.apmrc"
           ".zprofile"
           ".zshenv"
           ".zshrc"
-          "coffeelint.json")
+          "coffeelint.json"
+          "Library/Application Support/Beyond Compare/BCPreferences.xml")
 
 DOTDIRS=(".atom")
 
 for dotdir in "${DOTDIRS[@]}"
 do
-  mkdir -p $dotdir
+  mkdir -p "$dotdir"
 done
 
 for dotfile in "${DOTFILES[@]}"
 do
-  ln -sf $HOME/.dotfiles/$dotfile $HOME/$dotfile
+  ln -sf "$HOME/.dotfiles/$dotfile" "$HOME/$dotfile"
 done
 
 apm install --packages-file=$HOME/.atom/packages.txt
