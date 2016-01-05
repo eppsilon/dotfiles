@@ -16,6 +16,7 @@
 
 [merge]
 	tool = bc3
+	conflictstyle = diff3
 
 [mergetool]
 	prompt = false

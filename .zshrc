@@ -24,3 +24,6 @@ alias dmr='docker-machine restart default'
 alias dc='docker-compose'
 
 alias ls='ls -lahG'
+alias gc='git checkout'
+alias gsurem='git submodule update --remote'
+alias gsu='git submodule update --init'
