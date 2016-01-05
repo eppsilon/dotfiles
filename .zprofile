@@ -18,7 +18,8 @@ export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # ulimit
-ulimit -n 8192
+ulimit -n 10240
+ulimit -u 1024
 
 # docker
 export DOCKER_MACHINE_DRIVER=vmwarefusion
