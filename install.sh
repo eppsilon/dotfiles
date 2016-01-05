@@ -13,6 +13,8 @@ DOTFILES=(".atom/.apmrc"
           ".zshenv"
           ".zshrc"
           "coffeelint.json"
+          "Library/Application Support/Beyond Compare/BCColors.xml"
+          "Library/Application Support/Beyond Compare/BCFileFormats.xml"
           "Library/Application Support/Beyond Compare/BCPreferences.xml")
 
 DOTDIRS=(".atom")

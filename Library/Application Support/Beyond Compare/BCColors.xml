@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Produced by Beyond Compare 4 from Scooter Software -->
+<BCColors Version="1" MinVersion="1">
+	<TFileColors>
+		<BGColor Value="$222827"/>
+		<EditorFontStr Value="InputMono;12"/>
+		<ElementPSs>
+			<Item>
+				<ElementStr Value="&#2;Keyword"/>
+				<ValueStr Value="$EFD966;;-"/>
+			</Item>
+			<Item>
+				<ElementStr Value="&#2;Identifier"/>
+				<ValueStr Value="$2EE2A6"/>
+			</Item>
+			<Item>
+				<ElementStr Value="&#2;Number"/>
+				<ValueStr Value="$FF81AE"/>
+			</Item>
+			<Item>
+				<ElementStr Value="&#2;String"/>
+				<ValueStr Value="$74DBE6"/>
+			</Item>
+			<Item>
+				<ElementStr Value="&#2;Directive"/>
+				<ValueStr Value="$7226F9"/>
+			</Item>
+			<Item>
+				<ElementStr Value="&#2;Operator"/>
+				<ValueStr Value="$FF81AE"/>
+			</Item>
+		</ElementPSs>
+		<FGColor Value="$F2F8F8"/>
+		<HasInsigConflictBGColor Value="$000028"/>
+		<HasInsigDiffBGColor Value="$281414"/>
+		<HasInsigLeftBGColor Value="$280000"/>
+		<HasInsigRightBGColor Value="$280028"/>
+		<HasSigConflictBGColor Value="$000050"/>
+		<HasSigDiffBGColor Value="$1E1E3C"/>
+		<HasSigLeftBGColor Value="$500000"/>
+		<HasSigRightBGColor Value="$500050"/>
+		<HexFontStr Value="InputMono;12"/>
+	</TFileColors>
+</BCColors>

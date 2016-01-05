@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Produced by Beyond Compare 4 from Scooter Software -->
+<BCFileFormats Version="1">
+	<TTextFormat Value="Dockerfile">
+		<Description>
+			<_0 Value="Dockerfile"/>
+		</Description>
+		<Grammar>
+			<_0 Value="TListTextGrammarItem">
+				<ElementStr Value="&#2;Keyword"/>
+				<Items>
+					<_0 Value="ADD"/>
+					<_1 Value="FROM"/>
+					<_2 Value="MAINTAINER"/>
+					<_3 Value="RUN"/>
+				</Items>
+			</_0>
+			<_1 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;Comment"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="#"/>
+				<StopEOL Value="True"/>
+			</_1>
+		</Grammar>
+		<Mask Value="Dockerfile"/>
+		<TrimTrailingWS Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="Log Files">
+		<Description>
+			<_0 Value="Generic log file"/>
+		</Description>
+		<Grammar>
+			<_0 Value="TBasicTextGrammarItem">
+				<ElementStr Value="Timestamp"/>
+				<CaseSensitive Value="False"/>
+				<IsRegExp Value="True"/>
+				<Text Value="\d{2}-(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept|Oct|Nov|Dec)-\d{4} \d{2}:\d{2}:\d{2}"/>
+			</_0>
+		</Grammar>
+		<LineBased Value="True"/>
+		<Mask Value="*.log"/>
+		<TabAsSpaces Value="True"/>
+		<TabSize Value="4"/>
+		<TrimTrailingWS Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="CoffeeScript Source">
+		<Grammar>
+			<_0 Value="TListTextGrammarItem">
+				<ElementStr Value="&#2;Keyword"/>
+				<CaseSensitive Value="False"/>
+				<Items>
+					<_0 Value="else"/>
+					<_1 Value="if"/>
+					<_2 Value="not"/>
+					<_3 Value="return"/>
+					<_4 Value="throw"/>
+				</Items>
+			</_0>
+			<_1 Value="TBasicTextGrammarItem">
+				<ElementStr Value="&#2;Number"/>
+				<CaseSensitive Value="False"/>
+				<IsRegExp Value="True"/>
+				<Text Value="\d+(.\d+)?"/>
+			</_1>
+			<_2 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;String"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="'"/>
+				<StopText Value="'"/>
+			</_2>
+			<_3 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;String"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="&quot;"/>
+				<StopText Value="&quot;"/>
+			</_3>
+			<_4 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;Comment"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="###"/>
+				<StopText Value="###"/>
+			</_4>
+			<_5 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;Comment"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="#"/>
+				<StopEOL Value="True"/>
+			</_5>
+		</Grammar>
+		<Mask Value="*.coffee"/>
+		<TabAsSpaces Value="True"/>
+		<TabSize Value="2"/>
+		<TrimTrailingWS Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="JavaScript Source">
+		<Grammar>
+			<_0 Value="TListTextGrammarItem">
+				<ElementStr Value="&#2;Keyword"/>
+				<CaseSensitive Value="False"/>
+				<Items>
+					<_0 Value="const"/>
+					<_1 Value="else"/>
+					<_2 Value="function"/>
+					<_3 Value="if"/>
+					<_4 Value="let"/>
+					<_5 Value="return"/>
+					<_6 Value="throw"/>
+					<_7 Value="var"/>
+				</Items>
+			</_0>
+			<_1 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;String"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="'"/>
+				<Escape Value="92"/>
+				<StopEOL Value="True"/>
+				<StopText Value="'"/>
+			</_1>
+			<_2 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;String"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="&quot;"/>
+				<Escape Value="92"/>
+				<StopEOL Value="True"/>
+				<StopText Value="&quot;"/>
+			</_2>
+			<_3 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;String"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="`"/>
+				<StopText Value="`"/>
+			</_3>
+			<_4 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;Comment"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="/*"/>
+				<StopText Value="*/"/>
+			</_4>
+			<_5 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;Comment"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="//"/>
+				<StopEOL Value="True"/>
+			</_5>
+		</Grammar>
+		<Mask Value="*.js"/>
+		<TabAsSpaces Value="True"/>
+		<TabSize Value="2"/>
+		<TrimTrailingWS Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="Cascading Style Sheet">
+		<Grammar>
+			<_0 Value="TListTextGrammarItem">
+				<ElementStr Value="&#2;Directive"/>
+				<CaseSensitive Value="False"/>
+				<Items>
+					<_0 Value="@font-face"/>
+					<_1 Value="@import"/>
+					<_2 Value="@media"/>
+					<_3 Value="@each"/>
+					<_4 Value="@extend"/>
+					<_5 Value="@include"/>
+					<_6 Value="@mixin"/>
+				</Items>
+			</_0>
+			<_1 Value="TBasicTextGrammarItem">
+				<ElementStr Value="&#2;Identifier"/>
+				<CaseSensitive Value="False"/>
+				<IsRegExp Value="True"/>
+				<Text Value="\.[\w-]+"/>
+			</_1>
+			<_2 Value="TBasicTextGrammarItem">
+				<ElementStr Value="&#2;Identifier"/>
+				<CaseSensitive Value="False"/>
+				<IsRegExp Value="True"/>
+				<Text Value="%[\w-]+"/>
+			</_2>
+			<_3 Value="TBasicTextGrammarItem">
+				<ElementStr Value="&#2;Identifier"/>
+				<CaseSensitive Value="False"/>
+				<IsRegExp Value="True"/>
+				<Text Value="\$[\w-]+"/>
+			</_3>
+			<_4 Value="TBasicTextGrammarItem">
+				<ElementStr Value="&#2;Identifier"/>
+				<CaseSensitive Value="False"/>
+				<IsRegExp Value="True"/>
+				<Text Value="([\w-]+)(\s*\()"/>
+			</_4>
+			<_5 Value="TListTextGrammarItem">
+				<ElementStr Value="&#2;Operator"/>
+				<CaseSensitive Value="False"/>
+				<Items>
+					<_0 Value="attr"/>
+					<_1 Value="calc"/>
+					<_2 Value="format"/>
+					<_3 Value="url"/>
+					<_4 Value="in"/>
+					<_5 Value="+"/>
+					<_6 Value="-"/>
+					<_7 Value="/"/>
+					<_8 Value="*"/>
+					<_9 Value="&amp;"/>
+					<_10 Value="::"/>
+					<_11 Value=":"/>
+				</Items>
+			</_5>
+			<_6 Value="TListTextGrammarItem">
+				<ElementStr Value="&#2;Keyword"/>
+				<CaseSensitive Value="False"/>
+				<Items>
+					<_0 Value="-moz-osx-font-smoothing"/>
+					<_1 Value="-webkit-font-smoothing"/>
+					<_2 Value="-webkit-appearance"/>
+					<_3 Value="align-items"/>
+					<_4 Value="background-image"/>
+					<_5 Value="background-position"/>
+					<_6 Value="background-repeat"/>
+					<_7 Value="background-size"/>
+					<_8 Value="border-bottom"/>
+					<_9 Value="border-color"/>
+					<_10 Value="border-left"/>
+					<_11 Value="border-radius"/>
+					<_12 Value="border-right"/>
+					<_13 Value="border-style"/>
+					<_14 Value="border-top"/>
+					<_15 Value="border-width"/>
+					<_16 Value="box-shadow"/>
+					<_17 Value="box-sizing"/>
+					<_18 Value="flex-direction"/>
+					<_19 Value="flex-shrink"/>
+					<_20 Value="flex-wrap"/>
+					<_21 Value="font-family"/>
+					<_22 Value="font-style"/>
+					<_23 Value="font-weight"/>
+					<_24 Value="font-variant"/>
+					<_25 Value="line-height"/>
+					<_26 Value="max-height"/>
+					<_27 Value="max-width"/>
+					<_28 Value="min-height"/>
+					<_29 Value="min-width"/>
+					<_30 Value="outline-offset"/>
+					<_31 Value="overflow-x"/>
+					<_32 Value="overflow-y"/>
+					<_33 Value="text-align"/>
+					<_34 Value="text-decoration"/>
+					<_35 Value="text-overflow"/>
+					<_36 Value="text-transform"/>
+					<_37 Value="user-select"/>
+					<_38 Value="vertical-align"/>
+					<_39 Value="white-space"/>
+					<_40 Value="background"/>
+					<_41 Value="border"/>
+					<_42 Value="bottom"/>
+					<_43 Value="color"/>
+					<_44 Value="content"/>
+					<_45 Value="cursor"/>
+					<_46 Value="display"/>
+					<_47 Value="float"/>
+					<_48 Value="font"/>
+					<_49 Value="height"/>
+					<_50 Value="left"/>
+					<_51 Value="margin"/>
+					<_52 Value="outline"/>
+					<_53 Value="overflow"/>
+					<_54 Value="padding"/>
+					<_55 Value="position"/>
+					<_56 Value="right"/>
+					<_57 Value="speak"/>
+					<_58 Value="src"/>
+					<_59 Value="top"/>
+					<_60 Value="width"/>
+				</Items>
+			</_6>
+			<_7 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;String"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="&quot;"/>
+				<StopEOL Value="True"/>
+				<StopText Value="&quot;"/>
+			</_7>
+			<_8 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;String"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="'"/>
+				<StopText Value="'"/>
+			</_8>
+			<_9 Value="TBasicTextGrammarItem">
+				<ElementStr Value="&#2;Number"/>
+				<CaseSensitive Value="False"/>
+				<IsRegExp Value="True"/>
+				<Text Value="\d+([\.]\d*)?"/>
+			</_9>
+			<_10 Value="TListTextGrammarItem">
+				<ElementStr Value="&#2;Number"/>
+				<CaseSensitive Value="False"/>
+				<Items>
+					<_0 Value="%"/>
+					<_1 Value="em"/>
+					<_2 Value="pt"/>
+					<_3 Value="px"/>
+					<_4 Value="rem"/>
+					<_5 Value="deg"/>
+					<_6 Value="s"/>
+				</Items>
+			</_10>
+			<_11 Value="TListTextGrammarItem">
+				<ElementStr Value="&#2;Number"/>
+				<CaseSensitive Value="False"/>
+				<Items>
+					<_0 Value="border-box"/>
+					<_1 Value="content-box"/>
+					<_2 Value="inline-block"/>
+					<_3 Value="no-repeat"/>
+					<_4 Value="repeat-x"/>
+					<_5 Value="repeat-y"/>
+					<_6 Value="absolute"/>
+					<_7 Value="auto"/>
+					<_8 Value="block"/>
+					<_9 Value="bottom"/>
+					<_10 Value="center"/>
+					<_11 Value="column"/>
+					<_12 Value="contain"/>
+					<_13 Value="ellipsis"/>
+					<_14 Value="fixed"/>
+					<_15 Value="flex"/>
+					<_16 Value="hidden"/>
+					<_17 Value="infinite"/>
+					<_18 Value="inherit"/>
+					<_19 Value="inline"/>
+					<_20 Value="inset"/>
+					<_21 Value="italic"/>
+					<_22 Value="left"/>
+					<_23 Value="linear"/>
+					<_24 Value="middle"/>
+					<_25 Value="none"/>
+					<_26 Value="nowrap"/>
+					<_27 Value="relative"/>
+					<_28 Value="right"/>
+					<_29 Value="scroll"/>
+					<_30 Value="solid"/>
+					<_31 Value="spin"/>
+					<_32 Value="static"/>
+					<_33 Value="sticky"/>
+					<_34 Value="stretch"/>
+					<_35 Value="top"/>
+				</Items>
+			</_11>
+			<_12 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;Comment"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="#"/>
+				<StopEOL Value="True"/>
+			</_12>
+			<_13 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;Comment"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="//"/>
+				<StopEOL Value="True"/>
+			</_13>
+			<_14 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;Comment"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="/*"/>
+				<StopText Value="*/"/>
+			</_14>
+		</Grammar>
+		<Mask Value="*.css;*.scss"/>
+		<TabAsSpaces Value="True"/>
+		<TabSize Value="2"/>
+		<TrimTrailingWS Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="&#2;BASH">
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="&#2;CPP">
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="&#2;COBOL">
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TDataFormat Value="&#2;CSV">
+		<UseRes Value="True"/>
+	</TDataFormat>
+	<TTextFormat Value="&#2;DFM">
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="&#2;PAS">
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="&#2;HTML">
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="&#2;JAVA">
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TMP3Format Value="&#2;MP3">
+		<UseRes Value="True"/>
+	</TMP3Format>
+	<TDataFormat Value="&#2;MSEXCEL">
+		<UseRes Value="True"/>
+	</TDataFormat>
+	<TTextFormat Value="&#2;MSWORD">
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="&#2;OPENOFFICE">
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="&#2;PDF">
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="&#2;PERL">
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TPixFormat Value="&#2;PIX">
+		<UseRes Value="True"/>
+	</TPixFormat>
+	<TTextFormat Value="&#2;PYTHON">
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="&#2;RTF">
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="&#2;SORT">
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="&#2;SQL">
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="&#2;VB">
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="&#2;XML">
+		<UseRes Value="True"/>
+	</TTextFormat>
+</BCFileFormats>
