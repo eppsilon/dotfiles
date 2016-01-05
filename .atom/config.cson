@@ -26,6 +26,7 @@
       "package-generator"
       "styleguide"
       "welcome"
+      "linter-htmlhint"
     ]
     themes: [
       "one-dark-ui"
@@ -62,3 +63,7 @@
     globalNodePath: "/usr/local"
   wakatime:
     apikey: "3dbd88d6-c4f5-4729-b64b-11175ed1c563"
+  "atom-ternjs":
+    useSnippetsAndFunction: true
+    displayAboveSnippets: true
+    useSnippets: true
