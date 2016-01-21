@@ -42,9 +42,12 @@ alias 2-right       move screenOriginX+screenSizeX/3;screenOriginY    screenSize
 
 layout main   'Atom':REPEAT           ${1-left}
 layout main   'Google Chrome':REPEAT  ${1-right-bot}
+layout main   'Firefox':REPEAT        ${1-right-bot}
 layout main   'Terminal':REPEAT       ${1-right-top}
 layout main   'HipChat'               ${2-left}
 layout main   'Microsoft Outlook'     ${2-right}
+layout main   'Notes'                 ${2-right}
+layout main   'Beyond Compare'        ${1-full}
 
 # 3 Monitor layout
 #layout 3monitors 'iTerm':SORT_TITLE                       ${2-bot-l} | ${2-bot-m} | ${2-bot-r}
