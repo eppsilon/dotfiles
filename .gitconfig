@@ -1,9 +1,11 @@
 [core]
 	editor = nano -w
 	autocrlf = input
+	excludesfile = /Users/brett/.gitignore_global
 
 [user]
 	name = Brett Epps
+	email =
 
 [push]
 	default = simple
@@ -22,6 +24,13 @@
 [mergetool]
 	prompt = false
 	bc3 = trustExitCode
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 
 [include]
 	path = ~/.gitconfig.user
