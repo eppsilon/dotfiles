@@ -26,6 +26,12 @@
       "styleguide"
       "welcome"
       "linter-htmlhint"
+      "minimap-selection"
+      "minimap-linter"
+      "minimap-highlight-selected"
+      "minimap-git-diff"
+      "minimap-find-and-replace"
+      "minimap"
     ]
     ignoredNames: [
       ".git"
@@ -55,9 +61,11 @@
   "linter-scss-lint":
     executablePath: "/usr/local/var/rbenv/versions/2.2.3/bin/scss-lint"
   minimap:
+    displayMinimapOnLeft: true
     plugins:
       "find-and-replace": true
       "git-diff": true
+      "highlight-selected": true
       linter: true
       selection: true
   "spell-check":
@@ -69,7 +77,7 @@
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
-    showOnRightSide: true
+    squashDirectoryNames: true
   welcome:
     showOnStartup: false
   whitespace:
