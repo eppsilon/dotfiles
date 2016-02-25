@@ -35,8 +35,8 @@ alias 1-right-top   move screenOriginX+screenSizeX/2;screenOriginY              
 alias 1-right-bot   move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/3    screenSizeX/2;screenSizeY/3*2  ${mon-work}
 
 alias 2-full        move screenOriginX;screenOriginY                  screenSizeX;screenSizeY        ${mon-laptop}
-alias 2-left        move screenOriginX;screenOriginY                  screenSizeX/3;screenSizeY      ${mon-laptop}
-alias 2-right       move screenOriginX+screenSizeX/3;screenOriginY    screenSizeX/3*2;screenSizeY    ${mon-laptop}
+alias 2-left        move screenOriginX;screenOriginY                  screenSizeX/2;screenSizeY      ${mon-laptop}
+alias 2-right       move screenOriginX+screenSizeX/2;screenOriginY    screenSizeX/2;screenSizeY      ${mon-laptop}
 
 # Main layout
 
@@ -45,8 +45,10 @@ layout main   'Google Chrome':REPEAT  ${1-right-bot}
 layout main   'Firefox':REPEAT        ${1-right-bot}
 layout main   'Terminal':REPEAT       ${1-right-top}
 layout main   'HipChat'               ${2-left}
+layout main   'Slack'                 ${2-left}
 layout main   'Microsoft Outlook'     ${2-right}
 layout main   'Notes'                 ${2-right}
+layout main   'Evernote'              ${2-right}
 layout main   'Beyond Compare'        ${1-full}
 
 # 3 Monitor layout
