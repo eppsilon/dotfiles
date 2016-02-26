@@ -24,4 +24,7 @@ ulimit -u 1024
 # docker
 export DOCKER_MACHINE_DRIVER=vmwarefusion
 
+# let me append to a nonexistent file, dammit
+setopt clobber
+
 source $HOME/.zprofile.user
