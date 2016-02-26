@@ -32,6 +32,8 @@
       "minimap-git-diff"
       "minimap-find-and-replace"
       "minimap"
+      "styleguide"
+      "welcome"
     ]
     ignoredNames: [
       ".git"
@@ -83,6 +85,12 @@
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
 ".angular.html.text":
+  editor:
+    preferredLineLength: 120
+".coffee.jsx.source":
+  editor:
+    preferredLineLength: 120
+".js.jsx.source":
   editor:
     preferredLineLength: 120
 ".js.regexp.replacement.source":
