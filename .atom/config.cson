@@ -3,13 +3,14 @@
     displayAboveSnippets: true
     useSnippets: true
     useSnippetsAndFunction: true
+  "atom-typescript":
+    preferredQuoteCharacter: "'"
   core:
     disabledPackages: [
       "archive-view"
       "autocomplete-atom-api"
       "image-view"
       "language-clojure"
-      "language-csharp"
       "language-go"
       "language-java"
       "language-less"
@@ -26,12 +27,19 @@
       "styleguide"
       "welcome"
       "linter-htmlhint"
-      "minimap-selection"
-      "minimap-linter"
-      "minimap-highlight-selected"
-      "minimap-git-diff"
-      "minimap-find-and-replace"
-      "minimap"
+      "linter-scss-lint"
+      "activate-power-mode"
+      "angularjs"
+      "atom-ternjs"
+      "autocomplete-clang"
+      "autocomplete-python"
+      "linter-clang"
+      "linter-pylint"
+      "linter-xmllint"
+      "dev-live-reload"
+      "bookmarks"
+      "background-tips"
+      "autosave"
     ]
     ignoredNames: [
       ".git"
@@ -55,11 +63,13 @@
     showInvisibles: true
   "exception-reporting":
     userId: "ff8ebc7d-7204-4993-ee88-c2ad35f562d5"
+  linter: {}
   "linter-eslint":
-    globalNodePath: "/usr/local"
-    useGlobalEslint: true
+    lintHtmlFiles: true
+  "linter-sass-lint": {}
   "linter-scss-lint":
     executablePath: "/usr/local/var/rbenv/versions/2.2.3/bin/scss-lint"
+  "linter-tslint": {}
   minimap:
     displayMinimapOnLeft: true
     plugins:
@@ -74,15 +84,38 @@
       "comment.line.double-slash.js"
       "comment.block.documentation.js"
     ]
+  tabs:
+    enableVcsColoring: true
+  "tidy-tabs":
+    accessedThreshold: 10
+    minimumTabs: 8
+    modifiedThreshold: 30
+    runOnSave: true
+  "todo-show":
+    ignoreThesePaths: [
+      "**/tools/"
+      "**/node_modules/"
+      "**/vendor/"
+      "**/bower_components/"
+    ]
+    showInTable: [
+      "Text"
+      "File"
+    ]
+    sortBy: "File"
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
+    showOnRightSide: true
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
 ".angular.html.text":
+  editor:
+    preferredLineLength: 120
+".jade.source":
   editor:
     preferredLineLength: 120
 ".js.regexp.replacement.source":
@@ -95,5 +128,14 @@
   editor:
     preferredLineLength: 120
 ".plain.text":
+  editor:
+    preferredLineLength: 120
+".source.ts":
+  editor:
+    preferredLineLength: 120
+".source.tsx":
+  editor:
+    preferredLineLength: 120
+".text.todo":
   editor:
     preferredLineLength: 120
