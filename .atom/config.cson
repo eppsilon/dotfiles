@@ -118,6 +118,12 @@
 ".jade.source":
   editor:
     preferredLineLength: 120
+".coffee.jsx.source":
+  editor:
+    preferredLineLength: 120
+".js.jsx.source":
+  editor:
+    preferredLineLength: 120
 ".js.regexp.replacement.source":
   editor:
     preferredLineLength: 120

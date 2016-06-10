@@ -37,5 +37,8 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/repos
 source /usr/local/bin/virtualenvwrapper.sh
 
+# let me append to a nonexistent file, dammit
+setopt clobber
+
 # local
 source $HOME/.zprofile.user
