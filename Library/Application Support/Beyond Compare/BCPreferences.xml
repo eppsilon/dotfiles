@@ -6,7 +6,23 @@
 		<NextDiffAfterCopy Value="True"/>
 		<NextDiffLoadFirst Value="True"/>
 		<NextDiffWrap Value="True"/>
+		<OpConfirmCopy Value="False"/>
 		<TabsConfirmClose Value="False"/>
 		<WindowsConfirmClose Value="False"/>
+		<Workspaces>
+			<Item Value="&#1;">
+				<Windows>
+					<_0>
+						<PosStr Value="0;23;1440;896;M;72"/>
+						<Tabs>
+							<_0>
+								<ZOrder Value="0"/>
+							</_0>
+						</Tabs>
+						<ZOrder Value="0"/>
+					</_0>
+				</Windows>
+			</Item>
+		</Workspaces>
 	</TBcPrefs>
 </BCPreferences>

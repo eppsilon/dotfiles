@@ -1,6 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Produced by Beyond Compare 4 from Scooter Software -->
 <BCFileFormats Version="1">
+	<TTextFormat Value="JSON Files">
+		<CommentCaseSig Value="False"/>
+		<Description>
+			<_0 Value="JSON file"/>
+		</Description>
+		<Grammar>
+			<_0 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;String"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="&quot;"/>
+				<Escape Value="92"/>
+				<StopText Value="&quot;"/>
+			</_0>
+			<_1 Value="TBasicTextGrammarItem">
+				<ElementStr Value="&#2;Number"/>
+				<CaseSensitive Value="False"/>
+				<IsRegExp Value="True"/>
+				<Text Value="\d+"/>
+			</_1>
+			<_2 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;Comment"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="//"/>
+				<StopEOL Value="True"/>
+			</_2>
+			<_3 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;Comment"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="/*"/>
+				<StopText Value="*/"/>
+			</_3>
+			<_4 Value="TListTextGrammarItem">
+				<ElementStr Value="&#2;Keyword"/>
+				<CaseSensitive Value="False"/>
+				<Items>
+					<_0 Value="true"/>
+					<_1 Value="false"/>
+					<_2 Value="null"/>
+					<_3 Value="undefined"/>
+				</Items>
+			</_4>
+		</Grammar>
+		<Mask Value="*.json"/>
+		<NumberCaseSig Value="False"/>
+		<StringCaseSig Value="False"/>
+		<TrimTrailingWS Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="TypeScript Source">
+		<CommentCaseSig Value="False"/>
+		<Description>
+			<_0 Value="TypeScript source file"/>
+		</Description>
+		<DirectiveCaseSig Value="False"/>
+		<Grammar>
+			<_0 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;String"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="'"/>
+				<Escape Value="92"/>
+				<StopText Value="'"/>
+			</_0>
+			<_1 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;String"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="&quot;"/>
+				<Escape Value="92"/>
+				<StopText Value="&quot;"/>
+			</_1>
+			<_2 Value="TListTextGrammarItem">
+				<ElementStr Value="&#2;Keyword"/>
+				<Items>
+					<_0 Value="break"/>
+					<_1 Value="case"/>
+					<_2 Value="catch"/>
+					<_3 Value="class"/>
+					<_4 Value="continue"/>
+					<_5 Value="default"/>
+					<_6 Value="else"/>
+					<_7 Value="export"/>
+					<_8 Value="function"/>
+					<_9 Value="if"/>
+					<_10 Value="implements"/>
+					<_11 Value="interface"/>
+					<_12 Value="private"/>
+					<_13 Value="protected"/>
+					<_14 Value="public"/>
+					<_15 Value="return"/>
+					<_16 Value="require"/>
+					<_17 Value="static"/>
+					<_18 Value="super"/>
+					<_19 Value="switch"/>
+					<_20 Value="this"/>
+					<_21 Value="try"/>
+					<_22 Value="yield"/>
+				</Items>
+			</_2>
+			<_3 Value="TBasicTextGrammarItem">
+				<ElementStr Value="&#2;Number"/>
+				<CaseSensitive Value="False"/>
+				<IsRegExp Value="True"/>
+				<Text Value="\d+"/>
+			</_3>
+			<_4 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;Comment"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="/*"/>
+				<StopText Value="*/"/>
+			</_4>
+			<_5 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;Comment"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="//"/>
+				<StopEOL Value="True"/>
+			</_5>
+			<_6 Value="TBasicTextGrammarItem">
+				<ElementStr Value="&#2;Directive"/>
+				<CaseSensitive Value="False"/>
+				<IsRegExp Value="True"/>
+				<Text Value="@\w+[^\(]"/>
+			</_6>
+			<_7 Value="TListTextGrammarItem">
+				<ElementStr Value="&#2;Operator"/>
+				<CaseSensitive Value="False"/>
+				<Items>
+					<_0 Value="==="/>
+					<_1 Value="!=="/>
+					<_2/>
+					<_3 Value="=="/>
+					<_4 Value="!="/>
+					<_5 Value="+="/>
+					<_6 Value="-="/>
+					<_7 Value="*="/>
+					<_8 Value="/="/>
+					<_9 Value="++"/>
+					<_10 Value="--"/>
+					<_11 Value="**"/>
+					<_12 Value="=>"/>
+					<_13 Value="&lt;="/>
+					<_14 Value=">="/>
+					<_15 Value="&amp;&amp;"/>
+					<_16 Value="||"/>
+					<_17/>
+					<_18 Value="+"/>
+					<_19 Value="-"/>
+					<_20 Value="*"/>
+					<_21 Value="/"/>
+					<_22 Value=">"/>
+					<_23 Value="&lt;"/>
+					<_24 Value="%"/>
+					<_25 Value="^"/>
+					<_26 Value="&amp;"/>
+					<_27 Value="|"/>
+					<_28 Value="!"/>
+				</Items>
+			</_7>
+			<_8 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="&#2;String"/>
+				<CaseSensitive Value="False"/>
+				<Text Value="`"/>
+				<Escape Value="92"/>
+				<StopText Value="`"/>
+			</_8>
+		</Grammar>
+		<Mask Value="*.ts"/>
+		<OperatorCaseSig Value="False"/>
+		<StringCaseSig Value="False"/>
+		<TrimTrailingWS Value="True"/>
+	</TTextFormat>
 	<TTextFormat Value="Dockerfile">
 		<Description>
 			<_0 Value="Dockerfile"/>
@@ -160,7 +328,8 @@
 					<_3 Value="@each"/>
 					<_4 Value="@extend"/>
 					<_5 Value="@include"/>
-					<_6 Value="@mixin"/>
+					<_6 Value="@keyframes"/>
+					<_7 Value="@mixin"/>
 				</Items>
 			</_0>
 			<_1 Value="TBasicTextGrammarItem">
@@ -211,65 +380,74 @@
 				<Items>
 					<_0 Value="-moz-osx-font-smoothing"/>
 					<_1 Value="-webkit-font-smoothing"/>
-					<_2 Value="-webkit-appearance"/>
-					<_3 Value="align-items"/>
-					<_4 Value="background-image"/>
-					<_5 Value="background-position"/>
-					<_6 Value="background-repeat"/>
-					<_7 Value="background-size"/>
-					<_8 Value="border-bottom"/>
-					<_9 Value="border-color"/>
-					<_10 Value="border-left"/>
-					<_11 Value="border-radius"/>
-					<_12 Value="border-right"/>
-					<_13 Value="border-style"/>
-					<_14 Value="border-top"/>
-					<_15 Value="border-width"/>
-					<_16 Value="box-shadow"/>
-					<_17 Value="box-sizing"/>
-					<_18 Value="flex-direction"/>
-					<_19 Value="flex-shrink"/>
-					<_20 Value="flex-wrap"/>
-					<_21 Value="font-family"/>
-					<_22 Value="font-style"/>
-					<_23 Value="font-weight"/>
-					<_24 Value="font-variant"/>
-					<_25 Value="line-height"/>
-					<_26 Value="max-height"/>
-					<_27 Value="max-width"/>
-					<_28 Value="min-height"/>
-					<_29 Value="min-width"/>
-					<_30 Value="outline-offset"/>
-					<_31 Value="overflow-x"/>
-					<_32 Value="overflow-y"/>
-					<_33 Value="text-align"/>
-					<_34 Value="text-decoration"/>
-					<_35 Value="text-overflow"/>
-					<_36 Value="text-transform"/>
-					<_37 Value="user-select"/>
-					<_38 Value="vertical-align"/>
-					<_39 Value="white-space"/>
-					<_40 Value="background"/>
-					<_41 Value="border"/>
-					<_42 Value="bottom"/>
-					<_43 Value="color"/>
-					<_44 Value="content"/>
-					<_45 Value="cursor"/>
-					<_46 Value="display"/>
-					<_47 Value="float"/>
-					<_48 Value="font"/>
-					<_49 Value="height"/>
-					<_50 Value="left"/>
-					<_51 Value="margin"/>
-					<_52 Value="outline"/>
-					<_53 Value="overflow"/>
-					<_54 Value="padding"/>
-					<_55 Value="position"/>
-					<_56 Value="right"/>
-					<_57 Value="speak"/>
-					<_58 Value="src"/>
-					<_59 Value="top"/>
-					<_60 Value="width"/>
+					<_2 Value="animation-fill-mode"/>
+					<_3/>
+					<_4 Value="-webkit-appearance"/>
+					<_5 Value="align-items"/>
+					<_6 Value="animation-delay"/>
+					<_7 Value="animation-duration"/>
+					<_8 Value="background-image"/>
+					<_9 Value="background-position"/>
+					<_10 Value="background-repeat"/>
+					<_11 Value="background-size"/>
+					<_12 Value="border-bottom"/>
+					<_13 Value="border-color"/>
+					<_14 Value="border-left"/>
+					<_15 Value="border-radius"/>
+					<_16 Value="border-right"/>
+					<_17 Value="border-style"/>
+					<_18 Value="border-top"/>
+					<_19 Value="border-width"/>
+					<_20 Value="box-shadow"/>
+					<_21 Value="box-sizing"/>
+					<_22 Value="flex-direction"/>
+					<_23 Value="flex-shrink"/>
+					<_24 Value="flex-wrap"/>
+					<_25 Value="font-family"/>
+					<_26 Value="font-style"/>
+					<_27 Value="font-weight"/>
+					<_28 Value="font-variant"/>
+					<_29 Value="line-height"/>
+					<_30 Value="max-height"/>
+					<_31 Value="max-width"/>
+					<_32 Value="min-height"/>
+					<_33 Value="min-width"/>
+					<_34 Value="outline-offset"/>
+					<_35 Value="overflow-x"/>
+					<_36 Value="overflow-y"/>
+					<_37 Value="text-align"/>
+					<_38 Value="text-decoration"/>
+					<_39 Value="text-overflow"/>
+					<_40 Value="text-transform"/>
+					<_41 Value="transform-delay"/>
+					<_42 Value="transform-duration"/>
+					<_43 Value="user-select"/>
+					<_44 Value="vertical-align"/>
+					<_45 Value="white-space"/>
+					<_46 Value="animation"/>
+					<_47 Value="background"/>
+					<_48 Value="border"/>
+					<_49 Value="bottom"/>
+					<_50 Value="color"/>
+					<_51 Value="content"/>
+					<_52 Value="cursor"/>
+					<_53 Value="display"/>
+					<_54 Value="float"/>
+					<_55 Value="font"/>
+					<_56 Value="height"/>
+					<_57 Value="left"/>
+					<_58 Value="margin"/>
+					<_59 Value="outline"/>
+					<_60 Value="overflow"/>
+					<_61 Value="padding"/>
+					<_62 Value="position"/>
+					<_63 Value="right"/>
+					<_64 Value="speak"/>
+					<_65 Value="src"/>
+					<_66 Value="top"/>
+					<_67 Value="transform"/>
+					<_68 Value="visibility"/>
+					<_69 Value="width"/>
 				</Items>
 			</_6>
 			<_7 Value="TDelimitedTextGrammarItem">
@@ -324,26 +502,30 @@
 					<_13 Value="ellipsis"/>
 					<_14 Value="fixed"/>
 					<_15 Value="flex"/>
-					<_16 Value="hidden"/>
-					<_17 Value="infinite"/>
-					<_18 Value="inherit"/>
-					<_19 Value="inline"/>
-					<_20 Value="inset"/>
-					<_21 Value="italic"/>
-					<_22 Value="left"/>
-					<_23 Value="linear"/>
-					<_24 Value="middle"/>
-					<_25 Value="none"/>
-					<_26 Value="nowrap"/>
-					<_27 Value="relative"/>
-					<_28 Value="right"/>
-					<_29 Value="scroll"/>
-					<_30 Value="solid"/>
-					<_31 Value="spin"/>
-					<_32 Value="static"/>
-					<_33 Value="sticky"/>
-					<_34 Value="stretch"/>
-					<_35 Value="top"/>
+					<_16 Value="forward"/>
+					<_17 Value="forwards"/>
+					<_18 Value="hidden"/>
+					<_19 Value="infinite"/>
+					<_20 Value="inherit"/>
+					<_21 Value="inline"/>
+					<_22 Value="inset"/>
+					<_23 Value="italic"/>
+					<_24 Value="left"/>
+					<_25 Value="linear"/>
+					<_26 Value="middle"/>
+					<_27 Value="none"/>
+					<_28 Value="nowrap"/>
+					<_29 Value="relative"/>
+					<_30 Value="right"/>
+					<_31 Value="scroll"/>
+					<_32 Value="solid"/>
+					<_33 Value="spin"/>
+					<_34 Value="static"/>
+					<_35 Value="sticky"/>
+					<_36 Value="stretch"/>
+					<_37 Value="top"/>
+					<_38 Value="transparent"/>
+					<_39 Value="visible"/>
 				</Items>
 			</_11>
 			<_12 Value="TDelimitedTextGrammarItem">
@@ -364,6 +546,20 @@
 				<Text Value="/*"/>
 				<StopText Value="*/"/>
 			</_14>
+			<_15 Value="TListTextGrammarItem">
+				<ElementStr Value="&#2;Keyword"/>
+				<CaseSensitive Value="False"/>
+				<Items>
+					<_0 Value="::after"/>
+					<_1 Value="::before"/>
+					<_2/>
+					<_3 Value=":after"/>
+					<_4 Value=":before"/>
+					<_5 Value=":focus"/>
+					<_6 Value=":hover"/>
+					<_7 Value=":visited"/>
+				</Items>
+			</_15>
 		</Grammar>
 		<Mask Value="*.css;*.scss"/>
 		<TabAsSpaces Value="True"/>
