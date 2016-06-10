@@ -17,8 +17,13 @@ zstyle ':prezto:load' pmodule \
   'osx' \
   'syntax-highlighting' \
   'history-substring-search' \
+  'autosuggestions' \
   'ssh' \
-  'prompt'
+  'prompt' \
+  'homebrew' \
+  'node' \
+  'python' \
+  'git'
 
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':prezto:module:editor' key-bindings 'emacs'

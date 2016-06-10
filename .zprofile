@@ -1,5 +1,8 @@
 source $HOME/.dotfiles/.zprofile.prezto
 
+# disable cd-ing to dir without cd command
+export AUTO_CD=0
+
 # browser
 export BROWSER='open'
 
@@ -24,4 +27,15 @@ ulimit -u 1024
 # docker
 export DOCKER_MACHINE_DRIVER=vmwarefusion
 
+# github API for brew
+export HOMEBREW_GITHUB_API_TOKEN=ceaf7b2cee1317a8325228f9de31c3efb200f59b
+
+# virtualenv
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/repos
+source /usr/local/bin/virtualenvwrapper.sh
+
+# local
 source $HOME/.zprofile.user
