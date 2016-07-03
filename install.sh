@@ -5,17 +5,18 @@ DOTFILES=(".atom/.apmrc"
           ".atom/keymap.cson"
           ".atom/packages.txt"
           ".gitconfig"
-          ".mdastrc"
-          ".slate"
+          ".remarkrc"
           ".zprezto"
           ".zpreztorc"
           ".zprofile"
+          ".zprofile.prezto"
           ".zshenv"
           ".zshrc"
           "coffeelint.json"
           "Library/Application Support/Beyond Compare/BCColors.xml"
           "Library/Application Support/Beyond Compare/BCFileFormats.xml"
-          "Library/Application Support/Beyond Compare/BCPreferences.xml")
+          "Library/Application Support/Beyond Compare/BCPreferences.xml"
+          "Library/Application Support/Code/User/settings.json")
 
 DOTDIRS=(".atom")
 
@@ -29,4 +30,5 @@ do
   ln -sf "$HOME/.dotfiles/$dotfile" "$HOME/$dotfile"
 done
 
+apm uninstall
 apm install --packages-file=$HOME/.atom/packages.txt
