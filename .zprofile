@@ -40,5 +40,24 @@ source /usr/local/bin/virtualenvwrapper.sh
 # let me append to a nonexistent file, dammit
 setopt clobber
 
+# go
+export GOPATH=$HOME/.go
+export PATH=$PATH:/usr/local/opt/go/libexec/bin:$GOPATH/bin
+
+# vagrant
+#export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
+
+# java
+export JAVA_HOME=$(/usr/libexec/java_home)
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
+
+# gpg
+if test -f ~/.gnupg/.gpg-agent-info -a -n "$(pgrep gpg-agent)"; then
+  source ~/.gnupg/.gpg-agent-info
+  export GPG_AGENT_INFO
+else
+  eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
+fi
+
 # local
 source $HOME/.zprofile.user

@@ -72,3 +72,10 @@ alias npm='noglob npm'
 alias zreload='source /Users/brett/.zshrc'
 export ANDROID_HOME=/usr/local/opt/android-sdk
 alias nbin='PATH=/Users/brett/Repos/angular/node_modules/.bin:/Users/brett/.dnx/runtimes/dnx-coreclr-darwin-x64.1.0.0-rc1-update1/bin:/Users/brett/.dnx/bin:/Users/brett/.nvm/versions/node/v6.1.0/bin:/usr/local/var/rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+alias gdd='gd --dir-diff'
+alias gdsd='gds --dir-diff'
+alias isodate='date -u +%Y-%m-%dT%H:%M:%SZ'
+
+# direnv
+eval "$(direnv hook zsh)"
+
