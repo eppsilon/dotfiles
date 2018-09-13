@@ -1,5 +1,5 @@
 [core]
-	editor = nano -w
+	editor = code --wait
 	autocrlf = input
 	excludesfile = /Users/brett/.gitignore_global
 
@@ -24,18 +24,20 @@
 [mergetool]
 	prompt = false
 	bc3 = trustExitCode
+	keepBackup = false
 
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\"
+	path = -ro
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
 	trustExitCode = true
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
+	process = git-lfs filter-process
 
 [include]
 	path = ~/.gitconfig.user

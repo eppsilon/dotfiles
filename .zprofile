@@ -1,5 +1,8 @@
 source $HOME/.dotfiles/.zprofile.prezto
 
+# fix Chrome WebDriver issue
+export LC_NUMERIC='en_US.UTF-8'
+
 # disable cd-ing to dir without cd command
 export AUTO_CD=0
 
@@ -50,14 +53,17 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin:$GOPATH/bin
 # java
 export JAVA_HOME=$(/usr/libexec/java_home)
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
+export PATH="$JAVA_HOME/bin:$PATH"
 
-# gpg
-if test -f ~/.gnupg/.gpg-agent-info -a -n "$(pgrep gpg-agent)"; then
-  source ~/.gnupg/.gpg-agent-info
-  export GPG_AGENT_INFO
-else
-  eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
-fi
+# android
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$ANDROID_HOME/tools:$PATH"
+
+# node modules CLI
+export PATH="$HOME/.node-modules-cli/node_modules/.bin:$PATH"
 
 # local
 source $HOME/.zprofile.user
+
+# azure CLI
+export PATH=$PATH:/Users/brett/.azure-cli/bin
