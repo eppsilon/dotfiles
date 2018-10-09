@@ -121,6 +121,7 @@
         "hardcoded",
         "hoverable",
         "iframes",
+        "indexof",
         "inferrable",
         "ipodtouch",
         "itunes",
@@ -158,6 +159,7 @@
         "row",
         "scrollbar",
         "scrollbars",
+        "seedrandom",
         "selector",
         "signalr",
         "smtp",
@@ -186,6 +188,7 @@
         "unsets",
         "upsert",
         "viewports",
+        "vpns",
         "wakeup",
         "wifi"
     ],
@@ -293,4 +296,6 @@
     "breadcrumbs.enabled": true,
     "gitlens.historyExplorer.enabled": false,
     "workbench.statusBar.feedback.visible": false,
+    "editor.suggest.localityBonus": true,
+    "editor.tabCompletion": "on",
 }
