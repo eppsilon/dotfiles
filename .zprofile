@@ -60,7 +60,7 @@ export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="$ANDROID_HOME/tools:$PATH"
 
 # node modules CLI
-export PATH="$HOME/.node-modules-cli/node_modules/.bin:$PATH"
+export PATH="$HOME/.node-cli/node_modules/.bin:$PATH"
 
 # local
 source $HOME/.zprofile.user
