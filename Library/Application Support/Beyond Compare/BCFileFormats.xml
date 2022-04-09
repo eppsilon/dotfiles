@@ -46,6 +46,8 @@
 		<Mask Value="*.json"/>
 		<NumberCaseSig Value="False"/>
 		<StringCaseSig Value="False"/>
+		<TabAsSpaces Value="True"/>
+		<TabSize Value="2"/>
 		<TrimTrailingWS Value="True"/>
 	</TTextFormat>
 	<TTextFormat Value="TypeScript Source">
@@ -56,18 +58,18 @@
 		<DirectiveCaseSig Value="False"/>
 		<Grammar>
 			<_0 Value="TDelimitedTextGrammarItem">
-				<ElementStr Value="&#2;String"/>
 				<CaseSensitive Value="False"/>
-				<Text Value="'"/>
+				<ElementStr Value="&#2;String"/>
 				<Escape Value="92"/>
 				<StopText Value="'"/>
+				<Text Value="'"/>
 			</_0>
 			<_1 Value="TDelimitedTextGrammarItem">
-				<ElementStr Value="&#2;String"/>
 				<CaseSensitive Value="False"/>
-				<Text Value="&quot;"/>
+				<ElementStr Value="&#2;String"/>
 				<Escape Value="92"/>
 				<StopText Value="&quot;"/>
+				<Text Value="&quot;"/>
 			</_1>
 			<_2 Value="TListTextGrammarItem">
 				<ElementStr Value="&#2;Keyword"/>
@@ -98,32 +100,32 @@
 				</Items>
 			</_2>
 			<_3 Value="TBasicTextGrammarItem">
-				<ElementStr Value="&#2;Number"/>
 				<CaseSensitive Value="False"/>
+				<ElementStr Value="&#2;Number"/>
 				<IsRegExp Value="True"/>
 				<Text Value="\d+"/>
 			</_3>
 			<_4 Value="TDelimitedTextGrammarItem">
-				<ElementStr Value="&#2;Comment"/>
 				<CaseSensitive Value="False"/>
-				<Text Value="/*"/>
+				<ElementStr Value="&#2;Comment"/>
 				<StopText Value="*/"/>
+				<Text Value="/*"/>
 			</_4>
 			<_5 Value="TDelimitedTextGrammarItem">
-				<ElementStr Value="&#2;Comment"/>
 				<CaseSensitive Value="False"/>
-				<Text Value="//"/>
+				<ElementStr Value="&#2;Comment"/>
 				<StopEOL Value="True"/>
+				<Text Value="//"/>
 			</_5>
 			<_6 Value="TBasicTextGrammarItem">
-				<ElementStr Value="&#2;Directive"/>
 				<CaseSensitive Value="False"/>
+				<ElementStr Value="&#2;Directive"/>
 				<IsRegExp Value="True"/>
 				<Text Value="@\w+[^\(]"/>
 			</_6>
 			<_7 Value="TListTextGrammarItem">
-				<ElementStr Value="&#2;Operator"/>
 				<CaseSensitive Value="False"/>
+				<ElementStr Value="&#2;Operator"/>
 				<Items>
 					<_0 Value="==="/>
 					<_1 Value="!=="/>
@@ -157,17 +159,18 @@
 				</Items>
 			</_7>
 			<_8 Value="TDelimitedTextGrammarItem">
-				<ElementStr Value="&#2;String"/>
 				<CaseSensitive Value="False"/>
-				<Text Value="`"/>
+				<ElementStr Value="&#2;String"/>
 				<Escape Value="92"/>
 				<StopText Value="`"/>
+				<Text Value="`"/>
 			</_8>
 		</Grammar>
 		<Mask Value="*.ts"/>
 		<OperatorCaseSig Value="False"/>
 		<StringCaseSig Value="False"/>
-		<TrimTrailingWS Value="True"/>
+		<TabAsSpaces Value="True"/>
+		<TabSize Value="2"/>
 	</TTextFormat>
 	<TTextFormat Value="Dockerfile">
 		<Description>
@@ -261,6 +264,7 @@
 		<TrimTrailingWS Value="True"/>
 	</TTextFormat>
 	<TTextFormat Value="JavaScript Source">
+		<Description Value=""/>
 		<Grammar>
 			<_0 Value="TListTextGrammarItem">
 				<ElementStr Value="&#2;Keyword"/>
@@ -311,10 +315,8 @@
 				<StopEOL Value="True"/>
 			</_5>
 		</Grammar>
-		<Mask Value="*.js"/>
-		<TabAsSpaces Value="True"/>
-		<TabSize Value="2"/>
 		<TrimTrailingWS Value="True"/>
+		<UseRes Value="True"/>
 	</TTextFormat>
 	<TTextFormat Value="Cascading Style Sheet">
 		<Grammar>
@@ -564,12 +566,12 @@
 		<Mask Value="*.css;*.scss"/>
 		<TabAsSpaces Value="True"/>
 		<TabSize Value="2"/>
-		<TrimTrailingWS Value="True"/>
 	</TTextFormat>
 	<TTextFormat Value="&#2;BASH">
 		<UseRes Value="True"/>
 	</TTextFormat>
 	<TTextFormat Value="&#2;CPP">
+		<TabAsSpaces Value="True"/>
 		<UseRes Value="True"/>
 	</TTextFormat>
 	<TTextFormat Value="&#2;COBOL">
@@ -585,6 +587,8 @@
 		<UseRes Value="True"/>
 	</TTextFormat>
 	<TTextFormat Value="&#2;HTML">
+		<TabAsSpaces Value="True"/>
+		<TabSize Value="2"/>
 		<UseRes Value="True"/>
 	</TTextFormat>
 	<TTextFormat Value="&#2;JAVA">
@@ -628,5 +632,8 @@
 	</TTextFormat>
 	<TTextFormat Value="&#2;XML">
 		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat>
+		<TabSize Value="2"/>
 	</TTextFormat>
 </BCFileFormats>

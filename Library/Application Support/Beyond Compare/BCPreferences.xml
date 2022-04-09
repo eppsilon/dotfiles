@@ -7,13 +7,15 @@
 		<NextDiffLoadFirst Value="True"/>
 		<NextDiffWrap Value="True"/>
 		<OpConfirmCopy Value="False"/>
+		<QuickCompareShow Value="False"/>
 		<TabsConfirmClose Value="False"/>
+		<ToolbarShowCaptions Value="False"/>
 		<WindowsConfirmClose Value="False"/>
 		<Workspaces>
 			<Item Value="&#1;">
 				<Windows>
 					<_0>
-						<PosStr Value="0;23;1440;896;M;72"/>
+						<PosStr Value="0;23;1440;900;M"/>
 						<Tabs>
 							<_0>
 								<ZOrder Value="0"/>
