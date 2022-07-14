@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Produced by Beyond Compare 4 from Scooter Software -->
 <BCFileFormats Version="1">
+	<TTextFormat Value="New Text Format">
+		<CustomElementCaseSigs>
+			<Item>
+				<ElementStr Value="Dependency"/>
+				<ValueBool Value="False"/>
+			</Item>
+			<Item>
+				<ElementStr Value="Identifier List"/>
+				<ValueBool Value="False"/>
+			</Item>
+		</CustomElementCaseSigs>
+		<Grammar>
+			<_0 Value="TBasicTextGrammarItem">
+				<CaseSensitive Value="False"/>
+				<ElementStr Value="&#2;Identifier"/>
+				<IsRegExp Value="True"/>
+				<Text Value="^&quot;[^&quot;]+&quot;"/>
+			</_0>
+			<_1 Value="TListTextGrammarItem">
+				<CaseSensitive Value="False"/>
+				<ElementStr Value="Identifier List"/>
+				<IsRegExp Value="True"/>
+				<Items>
+					<_0 Value="^&quot;[^&quot;]+&quot;(, &quot;[^&quot;]+&quot;)*"/>
+				</Items>
+			</_1>
+			<_2 Value="TBasicTextGrammarItem">
+				<CaseSensitive Value="False"/>
+				<ElementStr Value="Dependency"/>
+				<IsRegExp Value="True"/>
+				<Text Value="^    &quot;(@[a-z0-9-_]+/)?[a-z0-9-_]+&quot; &quot;[^&quot;]+&quot;$"/>
+			</_2>
+		</Grammar>
+		<Mask Value="yarn.lock"/>
+		<TabSize Value="2"/>
+	</TTextFormat>
 	<TTextFormat Value="JSON Files">
 		<CommentCaseSig Value="False"/>
 		<Description>

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Produced by Beyond Compare 4 from Scooter Software -->
 <BCColors Version="1" MinVersion="1">
+	<TDirColors>
+		<BGColor Value="$000000"/>
+		<DiffFGColor Value="$A7A5FF"/>
+		<FGColor Value="$FFFFFF"/>
+		<FontStr Value="Fira Code Regular;14"/>
+		<NewerFGColor Value="$ADFFA7"/>
+		<OlderFGColor Value="$CACACA"/>
+		<OrphanFGColor Value="$FFAED6"/>
+		<SelSystem Value="True"/>
+		<StripeBGColor Value="$323232"/>
+	</TDirColors>
 	<TFileColors>
 		<BGColor Value="$222827"/>
 		<EditorFontStr Value="Fira Code Regular;14"/>
