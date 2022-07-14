@@ -1,11 +1,9 @@
 #!/usr/bin/env sh
 
 DOTFILES=(".gitconfig"
+          ".prompt.zsh"
           ".remarkrc"
-          ".zprezto"
-          ".zpreztorc"
           ".zprofile"
-          ".zprofile.prezto"
           ".zshenv"
           ".zshrc"
           "Library/Application Support/Beyond Compare/BCColors.xml"

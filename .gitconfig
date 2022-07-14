@@ -1,7 +1,11 @@
 [core]
 	editor = code --wait
+	pager = delta
 	autocrlf = input
 	excludesfile = /Users/brett/.gitignore_global
+
+[init]
+	defaultBranch = master
 
 [user]
 	name = Brett Epps
@@ -10,9 +14,16 @@
 [push]
 	default = simple
 
+[pull]
+	rebase = true
+
+[interactive]
+    diffFilter = delta --color-only
+
 [diff]
 	tool = bc3
 	renameLimit = 1000
+	colorMoved = default
 
 [difftool]
 	prompt = false
@@ -20,7 +31,7 @@
 
 [merge]
 	tool = bc3
-	# conflictstyle = diff3
+	conflictstyle = diff3
 
 [mergetool]
 	prompt = false
@@ -40,13 +51,14 @@
 	required = true
 	process = git-lfs filter-process
 
-[include]
-	path = ~/.gitconfig.user
 [advice]
 	detachedHead = false
-[pull]
-	rebase = true
+
 [sequence]
 	editor = interactive-rebase-tool
-[init]
-	defaultBranch = master
+
+[delta]
+	navigate = true  # use n and N to move between diff sections
+
+[include]
+	path = ~/.gitconfig.user

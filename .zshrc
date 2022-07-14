@@ -9,6 +9,7 @@ source "$HOME/.zplug/init.zsh"
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
 # Add plugins
+zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 zplug "romkatv/gitstatus"
 zplug "zdharma/fast-syntax-highlighting", defer:2
@@ -57,6 +58,7 @@ alias gf='git fetch'
 alias gfa='git fetch --all'
 alias gpo='git push -u origin HEAD'
 alias gpu='git push -u upstream HEAD'
+alias gss='git stash save'
 
 # NPM aliases
 alias npms='npm start'
