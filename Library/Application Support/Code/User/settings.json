@@ -97,6 +97,7 @@
     "emailaddress",
     "Epps",
     "esmcl",
+    "firestore",
     "flexbox",
     "flippable",
     "Focusable",
@@ -294,7 +295,6 @@
   "typescript.implementationsCodeLens.enabled": true,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
   "cSpell.showStatus": false,
-  "workbench.activityBar.visible": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "workbench.startupEditor": "newUntitledFile",
@@ -302,7 +302,7 @@
   "extensions.autoUpdate": false,
   "material-icon-theme.showReloadMessage": false,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": false
+    "source.organizeImports": "explicit"
   },
   "editor.minimap.enabled": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
@@ -340,8 +340,7 @@
   "breadcrumbs.enabled": true,
   "editor.suggest.localityBonus": true,
   "editor.tabCompletion": "on",
-  "window.nativeTabs": true,
-  "window.restoreWindows": "all",
+  "window.restoreWindows": "preserve",
   "terminal.external.osxExec": "iTerm.app",
   "editor.suggestSelection": "first",
   "workbench.colorTheme": "Dracula",
@@ -451,7 +450,6 @@
     "editor.defaultFormatter": "none",
     "editor.suggest.insertMode": "replace"
   },
-  "workbench.editor.untitled.hint": "hidden",
   "editor.fontSize": 13,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

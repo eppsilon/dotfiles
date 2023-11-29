@@ -110,3 +110,4 @@ function mdi() {
   svgo -q "src/assets/images/icons/$1-icon.svg"
   unsetopt verbose
 }
+export PATH="/usr/local/sbin:$PATH"

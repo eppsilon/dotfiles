@@ -5,7 +5,7 @@
 	excludesfile = /Users/brett/.gitignore_global
 
 [init]
-	defaultBranch = master
+	defaultBranch = main
 
 [user]
 	name = Brett Epps
