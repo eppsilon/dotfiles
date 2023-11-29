@@ -9,13 +9,14 @@ DOTFILES=(".gitconfig"
           ".node-cli/.envrc"
           ".node-cli/.nvmrc"
           ".node-cli/package.json"
-          ".node-cli/yarn.lock"
           "Library/Application Support/Beyond Compare/BCColors.xml"
           "Library/Application Support/Beyond Compare/BCFileFormats.xml"
           "Library/Application Support/Beyond Compare/BCPreferences.xml"
           "Library/Application Support/Code/User/settings.json")
 
-DOTDIRS=(".node-cli")
+DOTDIRS=(".node-cli"
+         "Library/Application Support/Beyond Compare"
+         "Library/Application Support/Code/User")
 
 for dotdir in "${DOTDIRS[@]}"
 do
@@ -24,8 +25,9 @@ done
 
 for dotfile in "${DOTFILES[@]}"
 do
-  if [[ "${dotfile:0:1}" == '.' ]]; then
-    dotfile = ${dotfile:1}
-  fi
   ln -sf "$HOME/.dotfiles/$dotfile" "$HOME/$dotfile"
 done
+
+touch "$HOME/.zprofile.user"
+
+echo 'Now, run install-packages.sh to install Homebrew/NPM packages'

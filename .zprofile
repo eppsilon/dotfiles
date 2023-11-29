@@ -1,6 +1,9 @@
 # fix Chrome WebDriver issue
 export LC_NUMERIC='en_US.UTF-8'
 
+# homebrew
+export PATH="/opt/homebrew/bin:$PATH"
+
 # disable cd-ing to dir without cd command
 export AUTO_CD=0
 
@@ -32,8 +35,8 @@ export GOPATH=$HOME/.go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin:$GOPATH/bin
 
 # java
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export JAVA_HOME=$(/usr/libexec/java_home)
-export PATH="$JAVA_HOME/bin:$PATH"
 
 # android
 export ANDROID_HOME="$HOME/Library/Android/sdk"
