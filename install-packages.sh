@@ -8,11 +8,13 @@ brew install \
   broot \
   direnv \
   dotnet \
+  exa \
   git \
   git-delta \
-  exa \
+  git-interactive-rebase-tool \
   mcfly \
   openjdk \
+  wakeonlan \
   yarn
 
 brew install --cask \
