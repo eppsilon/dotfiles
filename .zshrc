@@ -19,7 +19,7 @@ zplug "zdharma/fast-syntax-highlighting", defer:2
 zplug load
 
 # Prompt
-source "$HOME/.prompt.zsh"
+[[ -v ITERM_SESSION_ID ]] && source "$HOME/.prompt.zsh"
 
 # Install zsh-async if it's not present
 [[ ! -a ~/.zsh-async ]] && git clone git@github.com:mafredri/zsh-async.git ~/.zsh-async
@@ -57,8 +57,14 @@ alias gk='git commit -m'
 alias gf='git fetch'
 alias gfa='git fetch --all'
 alias gpo='git push -u origin HEAD'
+alias gpof='git push -u origin --force-with-lease HEAD'
 alias gpu='git push -u upstream HEAD'
 alias gss='git stash save'
+alias gsp='git stash pop'
+alias gcp='git cherry-pick'
+alias gcpn='git cherry-pick -n'
+alias gcpc='git cherry-pick --continue'
+alias gcps='git cherry-pick --skip'
 
 # NPM aliases
 alias npms='npm start'
@@ -66,7 +72,7 @@ alias npmt='npm test'
 alias npmc='npm test -- -cc -sr'
 
 # Misc aliases
-alias ls='exa -la'
+alias ls='eza -la'
 alias npm='noglob npm'
 alias yarn='noglob yarn'
 alias zreload="source $HOME/.zshrc"
@@ -77,6 +83,12 @@ eval "$(direnv hook zsh)"
 
 # iterm
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# make the history command useful
+alias history="history 1"
+HISTSIZE=99999
+HISTFILESIZE=99999
+SAVEHIST=$HISTSIZE
 
 # use local history (https://superuser.com/a/1025836)
 setopt share_history
@@ -110,4 +122,8 @@ function mdi() {
   svgo -q "src/assets/images/icons/$1-icon.svg"
   unsetopt verbose
 }
-export PATH="/usr/local/sbin:$PATH"
+
+# Command to get brew formulae that depend on a given formula
+function brew-ancestors() {
+  brew deps -1 --installed | grep ":.*$1" | awk -F':' '{print $1}'
+}

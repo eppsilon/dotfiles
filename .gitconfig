@@ -19,11 +19,11 @@
 
 [interactive]
     diffFilter = delta --color-only
-
 [diff]
 	tool = bc3
 	renameLimit = 1000
 	colorMoved = default
+	external = difft
 
 [difftool]
 	prompt = false
@@ -53,6 +53,7 @@
 
 [advice]
 	detachedHead = false
+	skippedCherryPicks = false
 
 [sequence]
 	editor = interactive-rebase-tool
@@ -62,3 +63,5 @@
 
 [include]
 	path = ~/.gitconfig.user
+[checkout]
+	defaultRemote = origin

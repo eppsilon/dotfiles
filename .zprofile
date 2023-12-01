@@ -51,5 +51,14 @@ export PATH="$PATH:$HOME/.azure-cli/bin"
 # .NET Core SDK tools
 export PATH="$PATH:$HOME/.dotnet/tools"
 
+# Azure AKS tools
+export PATH="$PATH:/opt/azure-aks/bin"
+
+# homebrew
+export HOMEBREW_NO_ENV_HINTS=1
+
+# JetBrains
+export PATH="$PATH:$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
+
 # local
 source $HOME/.zprofile.user

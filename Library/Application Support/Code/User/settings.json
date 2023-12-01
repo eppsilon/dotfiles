@@ -76,6 +76,7 @@
     "combobox",
     "configurator",
     "copyable",
+    "Cortana",
     "countdistinct",
     "crosshairs",
     "crossjoin",
@@ -138,6 +139,7 @@
     "mdm",
     "memoized",
     "Metas",
+    "mfgs",
     "mgmt",
     "mixins",
     "monospace",
@@ -235,6 +237,7 @@
     "unapprove",
     "UNASSIGN",
     "Unassigning",
+    "unassigns",
     "uncheck",
     "unclearable",
     "uncomment",
@@ -299,10 +302,9 @@
   "explorer.confirmDelete": false,
   "workbench.startupEditor": "newUntitledFile",
   "editor.colorDecorators": false,
-  "extensions.autoUpdate": false,
   "material-icon-theme.showReloadMessage": false,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
+    "source.organizeImports": true
   },
   "editor.minimap.enabled": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
@@ -340,10 +342,9 @@
   "breadcrumbs.enabled": true,
   "editor.suggest.localityBonus": true,
   "editor.tabCompletion": "on",
-  "window.restoreWindows": "preserve",
+  "window.restoreWindows": "all",
   "terminal.external.osxExec": "iTerm.app",
   "editor.suggestSelection": "first",
-  "workbench.colorTheme": "Dracula",
   "typescript.tsserver.maxTsServerMemory": 16384,
   "git.autofetch": true,
   "terraform.indexing": {
@@ -351,9 +352,6 @@
     "liveIndexing": false,
     "delay": 500,
     "exclude": [".terraform/**/*", "**/.terraform/**/*"]
-  },
-  "terraform.languageServer": {
-    "external": true
   },
   "debug.console.fontFamily": "Fira Code",
   "editor.tokenColorCustomizations": {
@@ -396,7 +394,6 @@
   "workbench.editor.decorations.colors": true,
   "workbench.editor.decorations.badges": true,
   "material-icon-theme.activeIconPack": "angular_ngrx",
-  "material-icon-theme.hidesExplorerArrows": false,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -450,6 +447,7 @@
     "editor.defaultFormatter": "none",
     "editor.suggest.insertMode": "replace"
   },
+  "workbench.editor.untitled.hint": "hidden",
   "editor.fontSize": 13,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -465,7 +463,6 @@
   "explorer.enableUndo": false,
   "editor.guides.indentation": true,
   "javascript.suggest.completeFunctionCalls": true,
-  "editor.inlayHints.enabled": "offUnlessPressed",
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
     "*.ts": "${capture}.js, ${capture}.spec.ts",
@@ -485,5 +482,42 @@
   "testExplorer.addToEditorContextMenu": true,
   "window.commandCenter": true,
   "git.mergeEditor": true,
-  "merge-conflict.autoNavigateNextConflict.enabled": true
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "vscode-edge-devtools.webhint": false,
+  "editor.dragAndDrop": false,
+  "editor.guides.bracketPairs": "active",
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.snippetSuggestions": "bottom",
+  "workbench.list.smoothScrolling": true,
+  "workbench.editor.enablePreviewFromCodeNavigation": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "explorer.incrementalNaming": "smart",
+  "angular.forceStrictTemplates": true,
+  "eslint.lintTask.enable": true,
+  "eslint.packageManager": "yarn",
+  "typescript.referencesCodeLens.showOnAllFunctions": true,
+  "editor.inlayHints.fontSize": 10,
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "material-icon-theme.folders.theme": "classic",
+  "terraform.languageServer.enable": true,
+  "debug.javascript.autoAttachFilter": "always",
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  "editor.inlineSuggest.enabled": true,
+  "editor.codeLensFontSize": 10,
+  "gitlens.codeLens.enabled": false,
+  "javascript.referencesCodeLens.showOnAllFunctions": true,
+  "workbench.colorTheme": "Dracula",
+  "[scss]": {
+    "editor.suggest.insertMode": "replace",
+    "cSpell.fixSpellingWithRenameProvider": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "githubPullRequests.pullBranch": "never"
 }
